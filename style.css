@@ -1,0 +1,37 @@
+.cell {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.cell-active {
+  background-color: #d9d9d9;
+  animation: activation 0.2s ease-in;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@keyframes activation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
